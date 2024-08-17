@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>uMail男装</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="margin:0; padding:0; background-color: #F4F4F4;width: 100%;">
+
+<!--推送内容-->
+<div  style=" width: 460px;margin: 0 auto;padding: 0 20px">
+    <img style="width: 67px;height: 67px; margin: 20px 0;" src="https://www.uniqlo.cn/public/bin/header/assets/imgs/uq-logo.jpg" alt="">
+    <h1 style=" color: #606060;font-size: 30px;margin-top: 15px;font-weight: bold;" ><%- title %> <span style="color: #FE0100" >限时特优</span> </h1>
+    <h5 style=" color: #606060;opacity: 0.8;font-size: 17px;letter-spacing: 1px;font-weight:bold;" >在第一时间获取优衣库最新降价消息, <br/> 助您抄底心仪的商品.</h5>
+    <h1 style=" color: #606060;font-size: 30px;margin-top: 15px;font-weight: bold;">男装上装 </h1>
+    <div style="flex-direction: row; flex-wrap: wrap; padding: 10px 0; flex:1; display: flex; justify-content: space-between;">
+        <% goodsA.map((item,i)=>{  %>
+            <div style="width: 48%; margin-bottom: 30px; <%- i%2==0?'padding-right: 2%; border-right:1px solid #DADADA ;':'' %> ">
+                <img style=" width: 100%;" src="https://www.uniqlo.cn/hmall/test/u0000000051993/main/first/561/1.jpg" alt="">
+                <div style="font-size: 17px;letter-spacing: 1px; color: #272727; " >
+                    <span style=" padding: 0 10px; background-color: #FE0100; color: #ffffff; font-weight: bold;">-60%</span>
+                    <span style="text-decoration: line-through; color:#A5A1A1 ; margin:0 5px; }"> <%- i %> ¥149 </span>
+                    <span style="color:#585858 ;"> ¥129</span></div>
+                <p style=" margin: 5px 0; font-size: 18px; flood-color: #272727;">凉感衣AIRism POLO衫短袖商务通勤T恤 </p>
+                <p style="color:#585858 ;">465196 </p>
+            </div>
+        <% }) %>
+    </div>
+
+
+    <h1 style=" color: #606060;font-size: 30px;margin-top: 15px;font-weight: bold;">男装下装 </h1>
+    <div style="flex-direction: row; flex-wrap: wrap; padding: 10px 0; flex:1; display: flex; justify-content: space-between;">
+        <% goodsB.map((item,i)=>{  %>
+            <div style="width: 48%; margin-bottom: 30px; <%- i%2==0?'padding-right: 2%; border-right:1px solid #DADADA ;':'' %> ">
+                <img style=" width: 100%;" src="https://www.uniqlo.cn/hmall/test/u0000000051993/main/first/561/1.jpg" alt="">
+                <div style="font-size: 17px;letter-spacing: 1px; color: #272727; " >
+                    <span style=" padding: 0 10px; background-color: #FE0100; color: #ffffff; font-weight: bold;">-60%</span>
+                    <span style="text-decoration: line-through; color:#A5A1A1 ; margin:0 5px; }"> <%- i %> ¥149 </span>
+                    <span style="color:#585858 ;"> ¥129</span></div>
+                <p style=" margin: 5px 0; font-size: 18px; flood-color: #272727;">凉感衣AIRism POLO衫短袖商务通勤T恤 </p>
+                <p style="color:#585858 ;">465196 </p>
+            </div>
+        <% }) %>
+    </div>
+
+
+</div>
+
+<!--    页脚-->
+<div style="width: 100%;background-color: #ffffff;">
+    <div style="width: 460px; margin: 0 auto; padding: 30px 0;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <img style="width: 36px; margin-right: 10px;" src="https://www.uniqlo.cn/public/bin/header/assets/imgs/uq-logo.jpg" alt="">
+            <div >
+                <p style="font-size: 12px; letter-spacing: 2px; color: #606060;margin: 0;padding: 0">此数据来源优衣库 <a style="color: #0091FF;" href="">官网</a> 限时特优,</p>
+                <p style="font-size: 12px; letter-spacing: 2px; color: #606060;margin:0; padding:0;">本服务不涉及任何商业价值,不作为消费参考价值.</p>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <img style="width: 36px; margin-right: 10px;border-radius:30px" src="https://boattext-1251490080.cos.ap-guangzhou.myqcloud.com/avatar%2FIMG_0158.jpeg" alt="">
+            <div>
+                <p style="font-size: 12px; letter-spacing: 2px; color: #606060;margin:0; padding:0;">本项目代码开源地址 <a style="color: #0091FF;"  href="">GitHub</a> ,</p>
+                <p style="font-size: 12px; letter-spacing: 2px; color: #606060;margin:0; padding:0;">教程视频在 <a style="color: #0091FF;" href="">JS全栈手册</a>.</p>
+            </div>
+        </div>
+        <h5><a href="" style="color:#A5A1A1" >退订邮件</a>  </h5>
+    </div>
+</div>
+</body>
+</html>
