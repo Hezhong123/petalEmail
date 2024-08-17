@@ -1,0 +1,187 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+body{
+    background-color: #F4F4F4;
+}
+
+.mail{
+    width: 100%;
+    padding: 30px 0 50px;
+    background-color: red;
+}
+.mailRow{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #DADADA;
+    padding: 50px;
+    border-radius:3px;
+    background-color: #F4F4F4;
+    position: relative;
+}
+
+.logo{
+    width: 67px;
+    height: 67px;
+    margin: 20px 0;
+}
+
+h1{
+    color: #606060;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h5{
+    color: #606060;
+    opacity: 0.8;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
+label{
+    font-size: 15px;
+    color: #606060;
+    margin-left: 5px;
+    line-height: 3px;
+}
+form{
+    margin-bottom: 50px!important;
+}
+.submitRow{
+    width: 300px;
+    border-bottom: 1px solid #DADADA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.submitRow input{
+    flex: 1;
+    font-size: 15px;
+    padding: 10px 5px;
+    border: none;
+    background-color: #F4F4F4;
+    color: #606060;
+    letter-spacing: 2px;
+}
+.submitRow button{
+    width: 60px;
+    height: 28px;
+    background-color: black;
+    border: none;
+    padding: 2px 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+/*邮件内容*/
+.uRow{
+    width: 500px;
+    margin: 0 auto;
+}
+.gRow{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+}
+.gRow .item{
+    width: 48%;
+    margin-bottom: 30px;
+}
+.gRow .itemA {
+    padding-right: 2%;
+    border-right:1px solid #DADADA ;
+}
+
+.gRow .item .fm{
+    width: 100%;
+}
+.spanRow{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #272727;
+}
+.pTitle{
+    margin: 5px 0;
+    font-size: 15px;
+    flood-color: #272727;
+}
+
+
+/*B6B6B6*/
+.footer{
+    background-color: #ffffff;
+}
+.footer .Row{
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer .Msg{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer .Img{
+    width: 36px;
+    margin-right: 10px;
+}
+.footer .pText{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #606060;
+}
+
+a{
+    color: #0091FF;
+}
+
+
+/*通用央视*/
+.margin20{
+    margin: 20px 0;
+}
+.margin15{
+    margin: 15px 0;
+}
+.pRed{
+    padding: 0 10px;
+    background-color: #FE0100;
+    color: #ffffff;
+    font-weight: bold;
+}
+.p1{
+    margin-top: 100px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #808080;
+    position: absolute;
+    bottom: 20px;
+}
+.pB{
+    text-decoration: line-through;
+    color:#A5A1A1 ;
+    margin:0 5px;
+}
+.pC{
+    color:#585858 ;
+}

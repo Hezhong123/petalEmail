@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>欢迎订阅uMail</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body style="padding-top: 130px">
 
@@ -13,16 +13,18 @@
     <img class="logo" src="https://www.uniqlo.cn/public/bin/header/assets/imgs/uq-logo.jpg" alt="">
     <h1 class="">订阅uMail</h1>
     <h5 class="margin20">在第一时间获取优衣库最新降价消息, <br/> 助您抄底心仪的商品.</h5>
-    <form action="" method="post" >
-        <label for=""> <input  type="checkbox" name="a1"> 女装</label>
-        <label for=""> <input  type="checkbox" name="a1"> 男装</label>
-        <label for=""> <input  type="checkbox" name="a1"> 童装</label>
+    <form action="/" method="post" >
+        <label > <input  type="checkbox" name="sex1" value="1" checked> 男装</label>
+        <label > <input  type="checkbox" name="sex2" value="2" checked> 女装</label>
+        <label > <input  type="checkbox" name="sex3" value="3" > 童装</label>
         <br>
         <div class="submitRow margin20">
-            <input type="email"  placeholder="请输入邮箱" name="email" id="">
+            <input type="email"  placeholder="请输入邮箱" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             <button type="submit">  订阅 </button>
         </div>
     </form>
+    <h5 class="margin20"> <a href="/uMail?sex=1"> 女装折扣 </a>  , <a href="/uMail?sex=2"> 男装折扣 </a> , <a href="/uMail?sex=3"> 童装折扣 </a></h5>
+
     <p class="p1"> 本项目仅作 <a href="">JS全栈入手</a> 编程学习使用不涉及任何商业推广和营销 </p>
 </div>
 
@@ -59,9 +61,9 @@
     button, input, select, textarea { font-size:100%; }
     table { border-collapse:collapse; border-spacing:0; }
 
-    body{background-color: #F4F4F4;}
-    .mail{width: 100%;padding: 30px 0 50px;background-color: red;}
-    .mailRow{width: 400px;margin: 0 auto;border: 1px solid #DADADA;padding: 50px;border-radius:3px;background-color: #F4F4F4;position: relative;}
+    body{background-color: #ffffff;width:100%}
+    .mail{max-width: 500px;width:100%;padding: 30px 0 50px;background-color: red;}
+    .mailRow{width: 80%;max-width:400px;margin: 0 auto;border: 1px solid #DADADA;padding: 50px;border-radius:3px;background-color: #F4F4F4;position: relative;}
     .logo{width: 67px;height: 67px;margin: 20px 0;}
     h1{color: #606060;font-size: 30px;font-weight: bold;}
     h5{color: #606060;opacity: 0.8;font-size: 17px;letter-spacing: 1px;font-weight:bold;}
