@@ -41,6 +41,7 @@ const server = http.createServer(async (req, res) => {
         }
     } else if (url === '/uMail?sex=1') {
         let data = FilterGoods(await GetSCV('csv/uMailM.csv'))
+        console.log("🧍男装", data)
         await ejs.renderFile('ejs/mail.ejs', {
             title: "8月8日-8月15日 男装", data }, (err, html) => {
             if (err) {
