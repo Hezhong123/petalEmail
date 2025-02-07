@@ -19,7 +19,7 @@ const server = http.createServer(async (req, res) => {
                 obj.sex1=='1'?sex.push(1):''
                 obj.sex2=='2'?sex.push(2):''
                 obj.sex3=='3'?sex.push(3):''
-                console.log(obj,sex);
+                console.log("请求",obj,sex);
                 SetSCV({email:obj.email,sex})
                 // 发送响应
                 ejs.renderFile('ejs/200.ejs', {}, (err, html) => {

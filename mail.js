@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
     secure: false, // Use `true` for port 465, `false` for all other ports
     auth: {
         user: "1430513000@qq.com",
-        pass: "habrhomfxpopicee",
+        pass: "kxqfunmdvttjbacg",
     },
 });
 
@@ -20,7 +20,7 @@ const sendMail = (title,mailMsg, html) => transporter.sendMail({
     html: html, // html body
 },(error, info)=>{
     if (error) {
-        return console.log(error);
+        return console.log("邮件推送错误",error);
     }
     console.log('Message sent: %s', info.messageId)
 });

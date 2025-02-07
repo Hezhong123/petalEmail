@@ -20,16 +20,17 @@ async function scrapeUniqloTimeLimit(url) {
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
         await page.goto(url);
-
         let previousHeight;
         do {
             previousHeight = await page.evaluate(() => document.body.scrollHeight);
             await scrollToBottom(page);
+            console.log("爬取数据",url)
             await delay(2000);
         } while (previousHeight !== await page.evaluate(() => document.body.scrollHeight));
         const titles = await page.$$eval('.h-product', elements => {
             const regex = /\d{6}/g;
             return elements.map(element => {
+                console.log(element)
                 const url = element.querySelector('a').href;
                 const img = element.querySelector('img').src;
                 const code = element.querySelector('.product-name').textContent.slice(-6)
@@ -75,7 +76,7 @@ async function scrapeUniqloTimeLimit(url) {
 // })
 
 // 爬取女装
-scrapeUniqloTimeLimit('https://www.uniqlo.cn/c/XIANDING-W0809.html').then(res => {
+scrapeUniqloTimeLimit('https://www.uniqlo.cn/c/XD-W0207.html').then(res => {
     // 将 JSON 数据转换为 CSV 字符串
     const columns = ['sex','start','title', 'code', 'price', '_price', 'img', 'url']
     stringify(res, {header: true, columns}, (err, output) => {

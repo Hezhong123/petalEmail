@@ -77,7 +77,7 @@ const FilterGoods = (data)=>{
     return dataArr
 }
 
-// 更具用户订阅生成模版
+// 根据用户订阅生成模版
 const FilterUserGoods = async (sex) => {
     let arrPromise = []
     function dataGoods(title, path) {
